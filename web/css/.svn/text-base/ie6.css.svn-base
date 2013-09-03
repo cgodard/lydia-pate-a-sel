@@ -1,0 +1,2 @@
+#navigation { width: 539px; }
+#navigation .bottom-left, #navigation .bottom-right { bottom: -10px; }

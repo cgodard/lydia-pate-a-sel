@@ -1,0 +1,15 @@
+lpas_shop_home:
+    pattern:  /
+    defaults: { _controller: LpasShopBundle:Guest:home }
+
+lpas_shop_gallery:
+    pattern:  /galerie
+    defaults: { _controller: LpasShopBundle:Guest:gallery }
+    
+lpas_shop_shop:
+    pattern:  /boutique
+    defaults: { _controller: LpasShopBundle:Guest:shop }
+    
+lpas_shop_contact:
+    pattern:  /contact
+    defaults: { _controller: LpasShopBundle:Guest:contact }

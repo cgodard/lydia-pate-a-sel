@@ -1,0 +1,7 @@
+parameters:
+#    lpas_administration.example.class: Lpas\AdministrationBundle\Example
+
+services:
+#    lpas_administration.example:
+#        class: %lpas_administration.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

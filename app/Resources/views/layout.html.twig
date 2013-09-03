@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>Lydia Duval - {% block title %}Ma pâte à sel, la passion{% endblock %}</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	
+	{% block stylesheets %}
+		<link rel="shortcut icon" href="{{ asset('css/images/favicon.ico') }}" />
+		<link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all" />
+		<!--[if IE 6]>
+			<link rel="stylesheet" href="{{ asset('css/ie6.css') }}" type="text/css" media="all" />
+		<![endif]-->
+	{% endblock %}
+	{% block head %}{% endblock %}
+</head>
+<body>
+	
+	<!-- Holder -->
+	<div id="holder">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Top line -->
+			<div id="top-line">
+				<!-- Shell -->
+				<div class="shell">
+					<!-- Header -->
+					<div id="header">
+						<h1 id="logo"><a href="#" title="Lydia Duval, ma pâte à sel, ma passion">Lydia Duval, ma pâte à sel, ma passion</a></h1>
+						<!-- Navigation -->
+						<div id="navigation">
+							<span class="radius top-left">&nbsp;</span>
+							<span class="radius top-right">&nbsp;</span>
+								<ul>
+									<li><a href="{{ path('lpas_shop_home') }}" title="Accueil" class="active">Accueil</a></li>
+									<li><a href="{{ path('lpas_shop_gallery') }}" title="Galerie photo">Galerie</a></li>
+									<li><a href="{{ path('lpas_shop_shop') }}" title="Boutique">Boutique</a></li>
+									<li class="last" title="Contact"><a href="{{ path('lpas_shop_contact') }}">Contact</a></li>		
+								</ul>
+<!-- 								{{ knp_menu_render('main') }} -->
+							<span class="radius bottom-left">&nbsp;</span>
+							<span class="radius bottom-right">&nbsp;</span>
+						</div>
+						<!-- END Navigation -->
+						<div class="cl">&nbsp;</div>
+					</div>
+					<!-- END Header -->
+					<!-- Main -->
+					<div id="main">
+						<div class="top">
+							<div class="bottom">
+								{% block body %}
+								
+								{% endblock %}
+								<div class="cl">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					<!-- END Main -->
+				</div>
+				<!-- END Shell -->			
+			</div>
+			<!-- END Top line -->
+		</div>
+		<!-- END Wrapper -->
+		<!-- Footer -->
+		<div id="footer">
+			<div class="shadow-footer">
+				<div class="shell">
+					<div class="col first">
+						<h4>About Us</h4>
+						<p>Nullam ac urna velit. Pellentesque in arcu tortor. Pellentesque nec est et elit varius pulvinar eget vitae sapien. Aenean vehicula accumsan gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus et lectus in urna consequat consectetur ut eget risus. Nunc augue diam, mattis eu tristique luctus, aliquam vitae massa. Praesent lacinia nisi sit amet risus cursus porta.</p>
+					</div>
+					<div class="col second">
+						<h4>Site Page</h4>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col three">
+						<h4>Praesent pharetra</h4>
+						<ul>
+							<li><a href="#">Vestibulum iaculis scelerisque</a></li>
+							<li><a href="#">Cras aliquam erat</a></li>
+							<li><a href="#">Morbi imperdiet ipsum</a></li>
+							<li><a href="#">Donec faucibus mollis</a></li>
+							<li><a href="#">Praesent lacinia nisi</a></li>
+						</ul>
+					</div>
+					<div class="cl">&nbsp;</div>
+					<div class="copy">
+						<p>Copyright 2013 | www.lydia-pate-a-sel.com Created by <a href="http://www.christopher-godard.com">Christopher Godard</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-background"><div class="shadow-bg">&nbsp;</div></div>
+		</div>
+		<!-- END Footer -->	
+	</div>
+	<!-- END Holder -->
+	
+	{% block javascripts %}
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+	<!--[if IE 6]>
+		<script type="text/javascript" src=""{{ asset('js/DD_belatedPNG.js') }}"></script>
+		<script type="text/javascript">
+			$(function() {
+				DD_belatedPNG.fix('h1#logo a, #header, #navigation .radius, #navigation ul li, #sidebar .border-bg, .post .image .top-bg, .post .image .center-bg, .post .image .bottom-bg');
+			});
+		</script>
+	<![endif]-->
+	{% endblock %}
+</body>
+</html>

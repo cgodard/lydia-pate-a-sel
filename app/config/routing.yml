@@ -1,0 +1,12 @@
+lpas_administration:
+    resource: "@LpasAdministrationBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+lpas_common:
+    resource: "@LpasCommonBundle/Resources/config/routing.yml"
+    prefix:   /
+
+lpas_shop:
+    resource: "@LpasShopBundle/Resources/config/routing.yml"
+    prefix:   /
+

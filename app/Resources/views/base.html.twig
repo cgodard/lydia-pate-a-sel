@@ -1,13 +1,199 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>{% block title %}Ma pâte à sel, la passion{% endblock %}</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	
+	{% block stylesheets %}
+			<link rel="stylesheet" href="{{ asset('css/layout.css') }}" type="text/css" />
+			<link rel="stylesheet" href="{{ asset('css/menu.css') }}" type="text/css" />
+			<link rel="stylesheet" href="{{ asset('css/blocs.css') }}" type="text/css" />
+			<link rel="stylesheet" href="{{ asset('css/dataTable.css') }}" type="text/css" />
+			
+			<link rel="shortcut icon" href="{{ asset('css/images/favicon.ico') }}" />
+			<link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all" />
+			<!--[if IE 6]>
+				<link rel="stylesheet" href="{{ asset('css/ie6.css') }}" type="text/css" media="all" />
+			<![endif]-->
+		{% endblock %}
+	
+</head>
+<body>
+	{% block body %}
+	<!-- Holder -->
+	<div id="holder">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Top line -->
+			<div id="top-line">
+				<!-- Shell -->
+				<div class="shell">
+					<!-- Header -->
+					<div id="header">
+						<h1 id="logo"><a href="#" title="The Sweetest CSS Templates WorldWide">The Sweetest CSS Templates WorldWide</a></h1>
+						<!-- Navigation -->
+						<div id="navigation">
+							<span class="radius top-left">&nbsp;</span>
+							<span class="radius top-right">&nbsp;</span>
+								<ul>
+									<li><a href="#" title="Home" class="active">Home</a></li>
+									<li><a href="#" title="Articles">Articles</a></li>
+									<li><a href="#" title="Tutorials">Tutorials</a></li>
+									<li class="last" title="Contact"><a href="#">Contact</a></li>		
+								</ul>
+							<span class="radius bottom-left">&nbsp;</span>
+							<span class="radius bottom-right">&nbsp;</span>
+						</div>
+						<!-- END Navigation -->
+						<div class="cl">&nbsp;</div>
+					</div>
+					<!-- END Header -->
+					<!-- Main -->
+					<div id="main">
+						<div class="top">
+							<div class="bottom">
+								<!-- Content -->
+								<div id="content">
+									<div class="post">
+										<div class="info">
+											<h2>Some Tittle Goes Here</h2>
+											<div class="date-and-name"><em>John Doe</em><p class="date">May. 26. 2011</p></div>
+											<div class="cl">&nbsp;</div>
+										</div>							
+										<div class="image">
+											<div class="top-bg">&nbsp;</div>
+												<div class="center-bg">
+													<img src="css/images/img-2.jpg" alt="Green abstract picture with ladybug" />
+												</div>
+											<div class="bottom-bg">&nbsp;</div>
+										</div>
+										<em>Phasellus vel arcu vitae neque sagittis aliquet ac at purus. Vestibulum varius eros in dui sagittis non ultrices orci hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em>
+										<p><strong>Sed euismod feugiat sodales</strong>. Vivamus dui ipsum, laoreet vitae euismod sit amet, euismod ac est. Sed turpis massa, convallis vitae facilisis eget, malesuada ullamcorper nibh. Nunc pulvinar augue non felis dictum ultricies. Donec lacinia, enim sit amet volutpat sodales, lorem velit fringilla metus, et semper metus sapien non odio. Nulla facilisi. <a href="#" title="Praesent">Praesent gravida suscipit leo</a>, eget fermentum magna malesuada ac. Maecenas pulvinar malesuada elementum.</p>
+										<p class="a-link"><a href="#">Read More</a></p>
+									</div>
+									<div class="border-line">&nbsp;</div>
+									<div class="post">
+										<div class="info">
+											<h2>Some Tittle Goes Here</h2>
+											<div class="date-and-name"><em>John Doe</em><p class="date">May. 26. 2011</p></div>
+											<div class="cl">&nbsp;</div>
+										</div>
+										<div class="image">
+											<div class="top-bg">&nbsp;</div>
+												<div class="center-bg">
+													<img src="css/images/img-1.jpg" alt="Green abstract picture with insect" />
+												</div>
+											<div class="bottom-bg">&nbsp;</div>
+										</div>
+										<em>Phasellus vel arcu vitae neque sagittis aliquet ac at purus. Vestibulum varius eros in dui sagittis non ultrices orci hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em>
+										<p><strong>Sed euismod feugiat sodales</strong>. Vivamus dui ipsum, laoreet vitae euismod sit amet, euismod ac est. Sed turpis massa, convallis vitae facilisis eget, malesuada ullamcorper nibh. Nunc pulvinar augue non felis dictum ultricies. Donec lacinia, enim sit amet volutpat sodales, lorem velit fringilla metus, et semper metus sapien non odio. Nulla facilisi. <a href="#" title="Praesent">Praesent gravida suscipit leo</a>, eget fermentum magna malesuada ac. Maecenas pulvinar malesuada elementum.</p>
+										<p class="a-link"><a href="#" title="Read More">Read More</a></p>
+									</div>
+									<div class="paging">
+										<div class="bottom-border">
+											<a href="#" class="prev">Prev &lt;&lt;</a>
+												<div class="page">
+													<a href="#" title="1">1</a><span>&#124;</span><a href="#" title="2">2</a><span>&#124;</span><a href="#" title="3">3</a><span>&#124;</span><a href="#" class="active" title="4">4</a><span>&#124;</span><a href="#" title="5">5</a><span>&#124;</span><a href="#" title="6">6</a><span>&#124;</span><a href="#" title="7">7</a><span>&#124;</span><a href="#" title="8">8</a><span>&#124;</span><a href="#" title="9">9</a><span>&#124;</span><a href="#" title="10">10</a><span>&#124;</span><a href="#" title="11">11</a><span>&#124;</span><a href="#" title="12">12</a><span>&#124;</span>
+												</div>
+											<a href="#" class="next">&gt;&gt; Next</a>
+										</div>
+									</div>
+								</div>
+								<!-- END Content -->
+								<!-- Sidebar -->
+								<div id="sidebar">
+									<div class="border-bg">
+										<div class="widget">
+											<h3>Categories</h3>
+											<div class="sub-navigation">
+												<ul>
+													<li><a href="#" title="Lorem">Lorem ipsum dolor sit amet</a></li>
+													<li><a href="#" title="Consectetur">Consectetur adipiscing elit</a></li>
+													<li><a href="#" title="Etiam">Etiam aliquet convallis enim ut </a></li>
+													<li><a href="#" title="Donec">Donec at pretium dui</a></li>
+													<li><a href="#" title="Nulla">Nulla sed massa sagittis venenatis</a></li>
+													<li><a href="#" title="Praesent">Praesent nec tortor nec massa </a></li>
+												</ul>								
+											</div>
+										</div>
+										<div class="widget last">
+											<h3>Recent Comments</h3>
+											<div class="comments">
+												<ul>
+													<li><a href="#" title="Donec">Donec consequat</a> suscipit leo at accumsan. In hac habitasse platea dictumst.</li>
+													<li><a href="#" title="Aliquam">Aliquam erat ipsum</a>, consequat id venenatis suscipit, venenatis sed leo. Ut nec lacus in sem eleifend semper id ac dolor.</li>
+													<li><a href="#" title="Etiam">Etiam aliquet convallis enim ut Donec at pretium dui</a></li>
+													<li><a href="#" title="Nulla">Nulla sed massa sagittis</a> venenatis Praesent nec tortor nec massa </li>
+													<li><a href="#" title="Donec">Donec faucibus mollis dolor in ullamcorper.</a></li>
+												</ul>
+											</div>
+											<p class="a-link"><a href="#" title="view More">View More</a></p>
+										</div>
+									</div>
+									<a href="http://FreePSDFiles.net" class="btn-first">FreePSDFiles.net</a>
+									<a href="http://web-backgrounds.net" class="btn-second">web-backgrounds.net</a>
+								</div>
+								<!-- END Sidebar -->
+								<div class="cl">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					<!-- END Main -->
+				</div>
+				<!-- END Shell -->			
+			</div>
+			<!-- END Top line -->
+		</div>
+		<!-- END Wrapper -->
+		<!-- Footer -->
+		<div id="footer">
+			<div class="shadow-footer">
+				<div class="shell">
+					<div class="col first">
+						<h4>About Us</h4>
+						<p>Nullam ac urna velit. Pellentesque in arcu tortor. Pellentesque nec est et elit varius pulvinar eget vitae sapien. Aenean vehicula accumsan gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus et lectus in urna consequat consectetur ut eget risus. Nunc augue diam, mattis eu tristique luctus, aliquam vitae massa. Praesent lacinia nisi sit amet risus cursus porta.</p>
+					</div>
+					<div class="col second">
+						<h4>Site Page</h4>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col three">
+						<h4>Praesent pharetra</h4>
+						<ul>
+							<li><a href="#">Vestibulum iaculis scelerisque</a></li>
+							<li><a href="#">Cras aliquam erat</a></li>
+							<li><a href="#">Morbi imperdiet ipsum</a></li>
+							<li><a href="#">Donec faucibus mollis</a></li>
+							<li><a href="#">Praesent lacinia nisi</a></li>
+						</ul>
+					</div>
+					<div class="cl">&nbsp;</div>
+					<div class="copy">
+						<p>Copyright 2011 | Sitename. Design by <a href="http://css-free-templates.com">CSS-FREE-TEMPLATES.com</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-background"><div class="shadow-bg">&nbsp;</div></div>
+		</div>
+		<!-- END Footer -->	
+	</div>
+	<!-- END Holder -->
+	{% endblock %}
+	{% block javascripts %}
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+	<!--[if IE 6]>
+		<script type="text/javascript" src=""{{ asset('js/DD_belatedPNG.js') }}"></script>
+		<script type="text/javascript">
+			$(function() {
+				DD_belatedPNG.fix('h1#logo a, #header, #navigation .radius, #navigation ul li, #sidebar .border-bg, .post .image .top-bg, .post .image .center-bg, .post .image .bottom-bg');
+			});
+		</script>
+	<![endif]-->
+	{% endblock %}
+</body>
 </html>
